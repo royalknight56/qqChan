@@ -1,5 +1,20 @@
-# qqChan
-qq的消息推送bot,server酱的qq版
+<h1 align="center">qqChan🐧</h1>
+
+
+
+
+<div align="center">
+
+
+「qqChan」qq的消息推送bot,server酱的qq版。
+
+
+</div>
+
+# 功能
+
+通过简单的请求向QQ用户推送消息
+
 
 # 使用方法
 
