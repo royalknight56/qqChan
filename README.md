@@ -46,6 +46,15 @@ user       |string        |发送目标的qq号|
 text       |string        |发送的文本|
 
 
+#### 示例
+http://myim.online/api/qmsg?user=123456789&text=你好
+
+{
+    "user": "123456789",
+    "text": "你好"
+}
+
+
 Finished!!!
 
 
