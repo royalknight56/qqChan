@@ -42,19 +42,22 @@ text       |string        |发送的文本| 是|
 
 字段       |字段类型       |字段说明 |
 ------------|-----------|-----------|
-user       |string        |发送目标的qq号|
-text       |string        |发送的文本|
+state       |string        |success: 代表成功,'fail:代表失败,具体原因看reason|
+code       |string        |状态码|
+reason      |string        |失败的原因|
 
 
 #### 示例
 http://myim.online/api/qmsg?user=123456789&text=你好
 
-{
-    "user": "123456789",
-    "text": "你好"
-}
+{"state":"success","code":"100"}
+
+
+# 调用量
+
+每天每人默认200次调用量
+超出会返回错误
+{"state":"fail","code":"102","reason":"超过每日调用上限200"}
 
 
 Finished!!!
-
-
