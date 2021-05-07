@@ -52,6 +52,46 @@ http://myim.online/api/qmsg?user=123456789&text=你好
 
 {"state":"success","code":"100"}
 
+# 发送到群聊的使用方法
+
+
+### 1.邀请qq酱加群[2930470152]
+
+qq酱被邀请后才可发送哦!!
+
+### 2.发送请求到http://myim.online/api/groupmsg
+
+#### 接口信息:
+
+GET:/api/groupmsg
+
+#### 请求参数
+
+
+字段       |字段类型       |字段说明 |是否必填|
+------------|-----------|-----------|-----------|
+group       |string        |发送目标的群号| 是|
+text       |string        |发送的文本| 是|
+
+
+
+
+#### 返回值
+
+
+字段       |字段类型       |字段说明 |
+------------|-----------|-----------|
+state       |string        |success: 代表成功,'fail:代表失败,具体原因看reason|
+code       |string        |状态码|
+reason      |string        |失败的原因|
+
+
+#### 示例
+http://myim.online/api/groupmsg?group=123456789&text=你好
+
+{"state":"success","code":"100"}
+
+
 
 # 调用量
 
